@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+  background-image: url('./images/Backdrop.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.flex-container-1 {
+  display: flex;
+}
+
+.flex-container-1 > div{
+  height: auto;
+  width: 20%;
+}
+
+#logo{
+  width: 90%;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 70px;
+  
+}
+
+.flex-container-2 {
+  display: flex;
+}
+
+.flex-container-2 > div {
+  width: 50%;
+  padding-left: 70px;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+
+.flex-container-2 > div:nth-child(1) p{
+  font-size: 2.5vw;
+  margin-bottom: 0;
+}
+
+#para{
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 2.5;
+  margin-top: 0;
+  width: 100%;
+  text-align: justify;
+}
+
+.flex-container-2 > div:nth-child(1) h1{
+  font-size: 5.5vw;
+  font-weight: 600;
+  margin-top: 0 ;
+  margin-bottom: 0;
+}
+
+
+#img-flex{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: black;
+  filter: drop-shadow(5px 5px 5px #222222);
+}
+
+.flex-container-2 #img1{
+  width: 60%;
+  height: auto;
+}
+
+.flex-container-2 #img2{
+  width: 70%;
+  height: auto;
+}
+
+button{
+  background-color: transparent;
+  color: white;
+    padding: 6px 12px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 10px;
+    width: 135px;
+    height: 42px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 5px #222222);
+}
+
+@media screen and (max-width: 600px) {
+
+  
+  #logo{
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  
+  .flex-container-1 > div{
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .flex-container-2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .flex-container-2 > div {
+    color:black;
+    width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  }
+
+  .flex-container-2 #img1{
+    width: 80%;
+    height: auto;
+  }
+  
+  .flex-container-2 #img2{
+    width: 90%;
+    height: auto;
+  }
+
+  .flex-container-2 > div:nth-child(1) p{
+    font-size: 10vw;
+  }
+
+  .flex-container-2 > div:nth-child(1) h1{
+    font-size: 20vw;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  #para{
+    width: 100%;
+  }
+
+  button{
+    color: black;
+    border: 2px solid black;
+    margin-top: 20px;
+  }
+  
+  button:hover{
+    background-color: black;
+    color: white;
+    
+  }
+
+}
+
+@media screen and (max-width: 1340px) {
+
+
+  button{
+    color: black;
+    border: 2px solid black;
+    margin-top: 20px;
+  }
+  
+  button:hover{
+    background-color: black;
+    color: white;
+    
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+#para{
+  color: #000000;
+}
+
+}
